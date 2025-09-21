@@ -1,0 +1,13 @@
+baseURL = "https://ddsfda99.github.io/cs-wiki/"
+title = "CS 知识库 | cs-wiki"
+languageCode = "zh-cn"
+theme = "book"
+
+[params]
+  BookSection = "notes"
+  BookSearch  = true
+  BookToC     = true
+  BookTheme   = "auto"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
