@@ -9,13 +9,18 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: true      
+      - uses: actions/configure-pages@v5
       - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
