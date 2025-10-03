@@ -23,7 +23,8 @@ draft: false
 **烧录到 SD 卡**
 打开 balenaEtcher， 点击 Flash from file，选择 openeuler-kunpeng.img，点击 Select target，选择 SD 卡。  
 点击 Flash!，等待写入和校验完成。成功提示 Flash complete。
-![alt text](/images/burn-img.png)
+
+![alt text](burn-img.png)
 
 **首次启动**
 将 SD 卡插入 Kunpeng Pro 卡槽。接上电源、HDMI、键盘、鼠标和网线，通电开机。  
@@ -59,6 +60,6 @@ sudo systemctl enable --now sshd
 ```bash
 ssh root@192.168.1.8
 ```
-![alt text](/images/login.png)
+![alt text](login.png)
 
 
